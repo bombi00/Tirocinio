@@ -50,10 +50,17 @@ Bisogna fare anche una distinzione dei dati raccolti e di quale categoria questi
 Dati invece non strutturati possono essere come immagini, audio, linguaggio testuale. Categoria di dati che è più difficile disporre all'interno di una tabella o database.
 
 == Pulizia e Preprocessing dei dati
+Prima di approcciarsi ad una prima esplorazione dei dati per la creazione di insight è prassi pulire o trasformare i dati.\
+La pulizia dei dati si occupa principalmente di eliminare eventuali dati mancanti o duplicati. Per evitare di eliminare grandi quantità di dati è possibile intramprendere una strategia di correzione dei dati, in linea con i parametri necessari oppure contrassegnati da marker specifici.
+La trasformazione dei dati invece prevede una loro normalizzazione convertendo le variabili in formati adeguati per il modello (Esempio è OneHotEncoder della libreria scikit-learn) o la creazione di nuove variabili.
 
 == Esplorazione e Analisi dei dati
+Questa fase all'interno della pipeline ha lo scopo di creare dei report dai dati presenti prima di essere analizzati dai modelli di machine learning. E' possibile comunque riscontare pattern, correlazioni o differenze molto spesso dai dati di partenza puliti.\
+Le analisi svolte in questa fase assieme agli insight finali daranno un quadro più dettagliato e possibilmente anche più interessante.
 
 == Ingegnerizzazione delle caratteristiche
+Riuscire a estrapolare e identificare le variabili più importanti, creare nuove variabili combiando o trasformando alcune già esistenti e applicarne tecniche di scaling, rappresenta la fase di Ingegnerizzazione delle caratteristiche.\
+Molte volte risolvere il problema prefissato senza eseguire questi passaggi e molto difficile se non impossibile. Da variabili pre esistenti come i vari pagamenti di diversi utenti si possono creare nuove variabili come la frequenza di acquisto, la spesa media ecc... Anche applicare tecniche di scaling (Esempio: MinMaxScaler scikit-learn) comporta a benefici, in maniera da garantire che le variabili siano su scale comparabili.
 
 == Sviluppo e Addestramento dei modelli
 
