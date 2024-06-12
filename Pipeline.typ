@@ -66,7 +66,7 @@ Molte volte risolvere il problema prefissato senza eseguire questi passaggi e mo
 La scelta del modello di machine learning è fondamentale per ottenere i migliori risultati per uno specifico problema.\
 La figura sottostante, reperita direttamente dal sito ufficiale di scikit-learn, attraverso la scelta di diversi parametri, consiglia l'algoritmo più consono al tipo di categoria e alla grandeza del dataset disponibile.
 #figure(
-  image("ml_map.svg", width: 80%),
+  image("ml_map.svg", width: 100%),
   caption: [
     Scelta modello
   ],
@@ -97,3 +97,15 @@ Le metriche di modelli non supervisionati (prendiamo come prima solo problemi di
 - Davies-Bouldin Index: misura la media delle similitudini tra ogni cluster e il cluster più simile ad esso. Valori più bassi indicano cluster ben separati e compatti.
 
 == Documentazione e Comunicazione
+Documentare ogni fase della pipline permette la sua replicabilità e la trasparenza dei passaggi eseguiti. Una buona documentazione aiuta o può aiutare in futuro altri sviluppatori a seguire una metodologia precisa.\
+Preparare report e presentazioni per comunicare i risultati agli stakeholder è necessario, in quanto è lo scopo finale della pipline. Esso è necessario a rispondere alle domande del primo punto ("Definizione del problema").
+
+= Conclusioni
+Sviluppare una pipeline dati richiede una combinazione di competenze tecniche, capacità analitiche e una forte comprensione del problema di business· Seguendo una struttura metodica come quella descritta, è possibile garantire che ogni fase del processo sia gestita in modo efficiente e che i risultati ottenuti siano accurati, replicabili e utili per prendere decisioni informate.
+Di sotto riporto uno schema con i passaggi della pipeline.
+#figure(
+  image("diagramma.png", width: 100%),
+  caption: [
+    Diagramma pipeline
+  ],
+)
